@@ -6,7 +6,7 @@ import {
   LIKE,
 } from "../constants/actionTypes";
 
-export default (posts = [], action) => {
+const postreqs = (posts = [], action) => {
   //Always state need to be something and not null
   switch (action.type) {
     case FETCH_ALL:
@@ -30,3 +30,5 @@ export default (posts = [], action) => {
       return posts;
   }
 };
+
+export default postreqs;
